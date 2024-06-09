@@ -64,32 +64,31 @@ public class AgenciaBancaria {
     }
     
     
-    // CRIAR CONTA
-	public static void criarConta() {
-        //System.out.println("Você está criando uma conta\n");
+ // CRIAR CONTA
+ 	public static void criarConta() {
+         //System.out.println("Você está criando uma conta\n");
 
-        System.out.println("\nNome: ");
-        String nome = input.next();
+         System.out.println("\nNome: ");
+         String nome = input.nextLine();
 
-        System.out.println("\nCPF OU CNPJ: ");
-        String documento = input.next();
+         System.out.println("\nCPF OU CNPJ: ");
+         String documento = input.nextLine();
 
-        System.out.println("Endereço: ");
-        String endereco = input.next();
-       
-        System.out.println("Senha: ");
-        String senha = input.next();
+         System.out.println("Endereço: ");
+         String endereco = input.nextLine();
+        
+         System.out.println("Senha: ");
+         String senha = input.next();
 
-        Cliente cliente = new Cliente(nome, documento, endereco, senha);
+         Cliente cliente = new Cliente(nome, documento, endereco, senha);
 
-        Conta conta = new Conta(cliente);
+         Conta conta = new Conta(cliente);
 
-        contasBancarias.add(conta);
-        System.out.println("--- Conta criada com sucesso! ---");
+         contasBancarias.add(conta);
+         System.out.println("--- Conta criada com sucesso! ---");
 
-        operacoes();
-
-    }
+         operacoes();
+ 	}
     
    
 // VERIFICAR NUMERO DA CONTA

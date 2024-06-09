@@ -56,11 +56,8 @@ public class Cliente {
 
     public String toString() {
         return  "\nName: " + this.getName() +
-        		
-                "\nCPF: " + this.getDocumento() +
-                
-                "\nEndereco: " + this.getEndereco() +
-                
+                "\nCPF ou CNPJ: " + this.getDocumento() +           
+                "\nEndereco: " + this.getEndereco() +             
                 "\nSenha: " + this.getSenha();
         
     }
